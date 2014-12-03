@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html ng-app>
-    <head>
-        <title>Neill N Silva III - Boston, MA</title>
-    </head>
-    <body>
+<html ng-app="nsPortfolio">
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="lib/angular.min.js"></script>
-    </body>
+    <title>Neill Silva - Boston, MA - Software Developer</title>
+</head>
+<body ng-controller="mainController">
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">NEILL N SILVA III</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Injected Partials display below -->
+    <div id="main">
+        {{ message }}
+    </div>
+
+    <!-- Libraries -->
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.js"></script>
+
+    <!-- Application JS -->
+    <script src="assets/js/app.js"></script>
+</body>
 </html>
