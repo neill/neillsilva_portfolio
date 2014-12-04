@@ -19,7 +19,7 @@ body {
     max-width: 400px;
     max-height: 100%;
     min-width: 200px;
-    min-height: 500px;
+    min-height: 600px;
     overflow: hidden;
     overflow-y: auto;
     width: 100%;
@@ -47,7 +47,7 @@ body {
     padding: 0px 10px 10px;
     margin-top: 10px;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     text-align: center;
     letter-spacing: 1pt;
@@ -129,10 +129,16 @@ li {
     animation-delay: 3s;
 }
 
-.slide4{
+.slide4 {
     margin-top: 107px;
     -webkit-animation-delay: 4s;
     animation-delay: 4s;
+}
+
+.slide5 {
+    margin-top: 138px;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
 }
 
 @-webkit-keyframes slide {
