@@ -1,5 +1,5 @@
 // Create Angular Module
-var nsPortfolio = angular.module('nsPortfolio', ['ngRoute']);
+var nsPortfolio = angular.module('nsPortfolio', ['ngRoute', 'ngAnimate']);
 
 // Config routing
 nsPortfolio.config(function($locationProvider, $routeProvider) {

@@ -4,12 +4,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/application.css" />
 
     <!-- Libraries -->
     <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap.js"></script>
     <script type="text/javascript" src="lib/angular.js"></script>
     <script type="text/javascript" src="lib/angular-route.js"></script>
+    <script type="text/javascript" src="lib/angular-animate.js"></script>
 
     <!-- Application JS -->
     <script src="assets/js/app.js"></script>
@@ -23,27 +25,21 @@
     <title>Neill Silva - Boston, MA - Software Developer</title>
 </head>
 <body ng-controller="mainController">
-    <!-- HEADER AND NAVBAR -->
-    <header>
-        <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">NEILL N SILVA III</a>
-            </div>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="/about"><i class="fa fa-shield"></i> About</a></li>
-                <li><a href="/contact"><i class="fa fa-comment"></i> Contact</a></li>
-            </ul>
-        </div>
-        </nav>
-    </header>
 
     <!-- Injected Partials display below -->
     <div id="main">
         <!-- Content will be shown in this div -->
         <div ng-view></div>
+
+            <div class="bottomnav">
+                <p>
+                    <div class="ftobj expandUp expandUp1"><a href="http://github.com/neill"><i class="fa fa-github fa-3x"></i></a></div>
+                    <div class="ftobj expandUp expandUp2"><a href="http://linkedin.com/in/neillsilva"><i class="fa fa-linkedin-square fa-3x"></i></a></div>
+                    <div class="ftobj expandUp expandUp3"><a href="http://twitter.com/neillsilva"><i class="fa fa-twitter-square fa-3x"></i></a></div>
+                    <div class="ftobj2 expandUp expandUp3"><a href="/about">ABOUT ME</a></div>
+                    <div class="ftobj2 expandUp expandUp3"><a href="/contact">CONTACT ME</a></div>
+                </p>
+            </div>
     </div>
 
 
