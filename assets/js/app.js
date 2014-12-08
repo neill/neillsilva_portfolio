@@ -28,3 +28,18 @@ nsPortfolio.controller('aboutController', function($scope) {
 nsPortfolio.controller('contactController', function($scope) {
     $scope.message = "This is the contact page.";
 });
+
+nsPortfolio.directive('ngApp', function() { return {
+    link: function (scope, element, attrs) {
+    var konamiCodeArray = [], konamiCodeKey = '38,38,40,40,37,39,37,39,66,65';
+    $(document).keydown(function(e) {
+        konamiCodeArray.push(e.keyCode);
+        if (konamiCodeArray.toString().indexOf(konamiCodeKey) >= 0) {
+            alert('Konami Code!');
+            konamiCodeArray = [];
+        }
+    });
+    }}
+});
+
+
